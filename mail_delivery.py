@@ -8,7 +8,7 @@ from platform import python_version
 
 server = 'smtp.mail.ru'
 user = '@mail.ru'
-password = ''
+password = ' '
 
 #содержание письма
 recipients = ["ra"]
@@ -21,7 +21,7 @@ text = """Здравствуйте.
 html = '<html><head></head><body><p>' + text + '</p></body></html>'
 
 #файл
-#filepath = ""
+#filepath = " "
 #basename = os.path.basename(filepath)
 #filesize = os.path.getsize(filepath)
 
