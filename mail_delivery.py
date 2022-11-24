@@ -7,16 +7,16 @@ from email import encoders
 from platform import python_version
 
 server = 'smtp.mail.ru'
-user = 'Luhnikov2000@mail.ru'
-password = 'fabyf4444'
+user = '@mail.ru'
+password = ''
 
 #содержание письма
-recipients = ["radikal2@mail.ru"]
-sender = 'Luhnikov2000@mail.ru'
+recipients = ["ra"]
+sender = 'Lu'
 subject = "Уведомление"
 text = """Здравствуйте. 
 <p>Уведомляю вас, что на этой и следующей неделе занятий не будет.
-<p>С уважением,  Ирина Савостьянова. 
+<p>!. 
 """
 html = '<html><head></head><body><p>' + text + '</p></body></html>'
 
@@ -28,7 +28,7 @@ html = '<html><head></head><body><p>' + text + '</p></body></html>'
 #формируем письмо
 msg = MIMEMultipart('alternative')
 msg['Subject'] = subject
-msg['From'] = 'Ирина Савостьянова <' + sender + '>'
+msg['From'] = 'Ирина  <' + sender + '>'
 msg['To'] = ', '.join(recipients)
 msg['Reply-To'] = sender
 msg['Return-Path'] = sender
